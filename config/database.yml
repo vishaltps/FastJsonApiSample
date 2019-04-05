@@ -1,0 +1,26 @@
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: fast_json_sample_development
+  pool: 5
+  username: 
+  password:
+
+test: &TEST
+  adapter: postgresql
+  encoding: utf8
+  database: fast_json_sample_test
+  pool: 5
+  username: 
+  password:
+
+production:
+  adapter: postgresql
+  encoding: utf8
+  database: fast_json_sample_production
+  pool: 5
+  username: 
+  password:
+
+cucumber:
+  <<: *TEST
